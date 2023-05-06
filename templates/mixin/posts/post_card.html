@@ -1,0 +1,39 @@
+{% load static %}
+<div class="card">
+    <div class="card_header">
+        <img src="http://via.placeholder.com/32x32" alt="프로필 이미지">
+        <a href="#">
+            <span class="card_user-name">likelion.official</span>
+        </a>
+    </div>
+    <div class="card_body">
+        <div>
+            <img class="card_image" src="http://via.placeholder.com/60x60" alt="카드 이미지">
+        </div>
+        <div class="car_btn-group">
+            <div>
+                <img class="card_btn" src="{% static '' %}" alt="좋아요">
+                <img class="card_btn" src="{% static '' %}" alt="댓글">
+                <img class="card_btn" src="{% static '' %}" alt="DM">
+            </div>
+            <div>
+                <img class="card_btn" src="{% static '' %}" alt="북마크">
+            </div>
+        </div>
+        <div class="card_content">
+            <span class="card_like_num">좋아요 60개</span>
+            <div class="card_main_text">
+                <p><span class="card_user-name">likelion.official</span>{{"으라라라 배고파"| truncatechar:12}}</p> #필터 사용시 글씨 길면 짤림
+            </div>
+            <div>
+                <p>댓글</p>
+                <ul class="card_comment-group">
+                    <li>
+                        <p><span class="card_user-name">dmkfkfkfk</p>댓글내용</p>
+                    </li>
+                </ul>
+                <p class="card_created-at">2023-05-05</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+{% load static %}
+# static 파일 연결해주기
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>{% block title %}{% endblock %} | 라이언그램</title> #타이틀이 담겨야 하는 곳에 block ???으로 연결해주고 endblock으로 연결해주기
+</head>
+#class = ??? 으로 연결해주기
+
+<body class ="container">
+    <div>
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+    <div>
+        <nav>
+            <ul class ="bottom-menu-group">
+                <li>
+                    <img src="{% static 'account_circle_black_24dp.svg'}" alt="홈">
+                </li>
+                <li>
+                    <img src="{% static 'home_black_24dp.svg'}" alt="홈">
+                    검색
+                </li>
+                <li>
+                    <img src="{% static 'account_circle_black_24dp.svg'}" alt="홈">
+                    글쓰기
+                </li>
+                <li>
+                    <img src="{% static 'play_circle_black_24dp.svg'}" alt="홈">
+                    좋아요
+                </li>
+
+                <li>
+
+                    프로필
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

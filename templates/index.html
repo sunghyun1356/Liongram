@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %} #상속을 받겠다
+{% load static %}
+
+{% block title %}홈{% endblock %}
+{% block content %} 
+
+<main>
+    <div class = "card-list">
+        
+        {% include 'mixin\posts\post_card.html' %}
+
+    </div>
+    
+</main>
+
+
+{% endblock %} 
